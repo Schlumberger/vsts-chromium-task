@@ -1,0 +1,77 @@
+{
+  "manifestVersion": 1,
+  "id": "chromium",
+  "name": "VSTS Chromium",
+  "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
+  "public": false,
+  "publisher": "Schlumberger",
+  "galleryFlags": [
+    "Preview",
+    "Free"
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Incudes tasks to help you install Chromium.",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "release",
+    "build",
+    "testing",
+    "javascript",
+    "chrom"
+  ],
+  "links": {
+    "learn": {
+      "uri": "http://vsts-chromium-task.readthedocs.io"
+    },
+    "support": {
+      "uri": "https://github.com/Schlumberger/vsts-chromium-task/issues"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/Schlumberger/vsts-chromium-task"
+  },
+  "icons": {
+    "default": "images/extension-icon.png"
+  },
+  "branding": {
+    "color": "#1C3272",
+    "theme": "dark"
+  },
+  "screenshots": [
+    {
+      "path": "images/screenshot-01.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "README.md"
+    },
+    "license": {
+      "path": "LICENSE.txt"
+    }
+  },
+  "files": [
+    {
+      "path": "chromium-task"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "chromium-task",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "chromium-task"
+      }
+    }
+  ]
+}

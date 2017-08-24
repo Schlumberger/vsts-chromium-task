@@ -1,0 +1,45 @@
+{
+
+  "id": "3986AF1E-6143-4578-91AB-62323A6FB618",
+  "name": "chromium-task",
+  "friendlyName": "Download Chromium Build",
+  "description": "Deploys Chromium to the Build Agent",
+  "helpMarkDown": "v#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#.#{GitVersion.COMMITSSINCEVERSIONSOURCE}# [More Information](https://github.com/Schlumberger/vsts-chromium-task#readme)",
+  "category": "Deploy",
+  "visibility": [
+    "Build",
+    "Release"
+  ],
+  "author": "Hagan ",
+  "version": {
+    "Major": "#GitVersion.Major#",
+    "Minor": "#GitVersion.Minor#",
+    "Patch": "#GitVersion.Patch#"
+  },
+  "minimumAgentVersion": "1.92.0",
+  "groups": [
+    {
+      "name": "missing",
+      "displayName": "Missing variables",
+      "isExpanded": true
+    }
+  ],
+  "inputs": [
+    {
+      "name": "unpackFolder",
+      "type": "filePath",
+      "label": "Unpack To",
+      "defaultValue": "$(System.DefaultWorkingDirectory)",
+      "required": true,
+      "helpMarkDown": "Location to unpack the Chromium files to."
+    }
+  ],
+  "instanceNameFormat": "Downloads Chromium to $(unpackFolder)",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\download-chromium.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(System.DefaultWorkingDirectory)"
+    }
+  }
+}

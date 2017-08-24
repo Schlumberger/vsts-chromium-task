@@ -4,7 +4,7 @@
   "name": "VSTS Chromium",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
   "public": false,
-  "publisher": "Schlumberger",
+  "publisher": "slb",
   "galleryFlags": [
     "Preview"
   ],

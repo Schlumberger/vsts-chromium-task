@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "chromium",
-  "name": "VSTS Chromium",
+  "name": "VSTS Chromium Tasks",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
   "public": false,
   "publisher": "slb",

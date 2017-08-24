@@ -6,8 +6,7 @@
   "public": false,
   "publisher": "Schlumberger",
   "galleryFlags": [
-    "Preview",
-    "Free"
+    "Preview"
   ],
   "targets": [
     {

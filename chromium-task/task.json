@@ -4,7 +4,7 @@
   "name": "chromium-task",
   "friendlyName": "Download Chromium Build",
   "description": "Deploys Chromium to the Build Agent",
-  "helpMarkDown": "v#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#.#{GitVersion.COMMITSSINCEVERSIONSOURCE}# [More Information](https://github.com/Schlumberger/vsts-chromium-task#readme)",
+  "helpMarkDown": "v$(GITVERSION_FullSemVer) [More Information](https://github.com/Schlumberger/vsts-chromium-task#readme)",
   "category": "Deploy",
   "visibility": [
     "Build",
@@ -12,9 +12,9 @@
   ],
   "author": "Hagan ",
   "version": {
-    "Major": "#GitVersion.Major#",
-    "Minor": "#GitVersion.Minor#",
-    "Patch": "#GitVersion.Patch#"
+    "Major": "#{GitVersion.Major}#",
+    "Minor": "#{GitVersion.Minor}#",
+    "Patch": "#{GitVersion.Patch}#"
   },
   "minimumAgentVersion": "1.92.0",
   "groups": [

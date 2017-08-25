@@ -20,7 +20,7 @@ Sample Karma headless configuration:
     }
 ```
 
-Full documentation is available on [http://vsts-chromium-task.readthedocs.io](http://vsts-chromium-task.readthedocs.io)
+Full documentation is available on [http://vsts-chromium-task.readthedocs.io](http://vsts-chromium-tasks.readthedocs.io)
 
 ## Getting the Tools
 

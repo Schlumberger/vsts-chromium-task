@@ -1,4 +1,6 @@
-﻿#Save-Module -Name VstsTaskSdk -Path ..\chromium-task\ps_modules\
+﻿# Schlumberger Public
+
+#Save-Module -Name VstsTaskSdk -Path ..\chromium-task\ps_modules\
 
 Import-Module ..\chromium-task\ps_modules\VstsTaskSdk
 

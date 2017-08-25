@@ -16,6 +16,8 @@ Trace-VstsEnteringInvocation $MyInvocation
 
 try {
 
+    [string] $InstallPath = Get-VstsInput -Name "unpackFolder"
+
     function UnescapeUri($uriString) {
         $uri = New-Object System.Uri -ArgumentList ($uriString)
         $UnEscapeDotsAndSlashes = 0x2000000;
@@ -70,7 +72,7 @@ try {
     }
     # New-Item -ItemType Directory -Force -Path $InstallPath
 
-    Write-VstsTaskVerbose "Extracting Chromium to '$InstallPath'."
+    Write-Output "Extracting Chromium to '$InstallPath'."
 
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     [System.IO.Compression.ZipFile]::ExtractToDirectory($ZipFile, $InstallPath)

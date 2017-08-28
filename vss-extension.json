@@ -4,7 +4,7 @@
   "name": "VSTS Chromium Build Tasks",
   "version": "#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}#",
   "public": false,
-  "publisher": "slb",
+  "publisher": "schlumberger",
   "galleryFlags": [
     "Preview"
   ],

@@ -10,7 +10,7 @@
     "Build",
     "Release"
   ],
-  "author": "Hagan ",
+  "author": "Schlumberger ",
   "version": {
     "Major": "#{GitVersion.Major}#",
     "Minor": "#{GitVersion.Minor}#",
@@ -37,7 +37,7 @@
   "instanceNameFormat": "Downloads Chromium to $(unpackFolder)",
   "execution": {
     "PowerShell3": {
-      "target": "$(currentDirectory)\\download-chromium.ps1",
+      "target": "$(currentDirectory)\\download-chromium-build.ps1",
       "argumentFormat": "",
       "workingDirectory": "$(System.DefaultWorkingDirectory)"
     }

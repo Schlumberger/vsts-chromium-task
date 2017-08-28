@@ -68,11 +68,6 @@ try {
     if (-not $InstallPath) {
         $InstallPath = Join-Path $env:LOCALAPPDATA "Chromium"
     }
-    if (Test-Path $InstallPath) {
-        Write-VstsTaskVerbose "Cleaning folder '$InstallPath'."
-        Get-ChildItem $InstallPath | Remove-Item -Recurse
-    }
-    # New-Item -ItemType Directory -Force -Path $InstallPath
 
     Write-Output "Extracting Chromium to '$InstallPath'."
 

@@ -10,7 +10,7 @@
     "Build",
     "Release"
   ],
-  "author": "Hagan ",
+  "author": "Schlumberger ",
   "version": {
     "Major": "#{GitVersion.Major}#",
     "Minor": "#{GitVersion.Minor}#",

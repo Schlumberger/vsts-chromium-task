@@ -1,4 +1,4 @@
-# VSTS Chromium Build Task [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/version-short/schlumberger.chromium.svg)](https://marketplace.visualstudio.com/items?itemName=schlumberger.chromium)
+# VSTS Chromium Build Task [![Visual Studio Marketplace](https://vsmarketplacebadge.apphb.com/version-short/schlumberger.chromium.svg)](https://marketplace.visualstudio.com/items?itemName=schlumberger.chromium-build-tasks-Preview)
 
 This task automates the Process of Installing Chromium on your Hosted Build Agent in VSTS so that you can run your javascript tests with a headless browser.
 
@@ -24,7 +24,7 @@ Full documentation is available on [http://vsts-chromium-task.readthedocs.io](ht
 
 ## Getting the Tools
 
- You can [install from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=schlumberger.chromium) 
+ You can [install from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=schlumberger.chromium-build-tasks-Preview) 
 
 
 

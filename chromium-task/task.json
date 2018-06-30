@@ -16,6 +16,7 @@
     "Minor": "#{GitVersion.Minor}#",
     "Patch": "#{GitVersion.Patch}#"
   },
+  "satisfies": ["chromium"],
   "minimumAgentVersion": "1.92.0",
   "groups": [
     {

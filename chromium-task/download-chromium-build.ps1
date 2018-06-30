@@ -15,6 +15,7 @@
 #Write-VstsTaskVerbose "accesstoken: $accesstoken" 
 
 Trace-VstsEnteringInvocation $MyInvocation
+$ProgressPreference = 'SilentlyContinue'
 
 try {
 

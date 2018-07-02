@@ -4,7 +4,7 @@
   "name": "chromium-task",
   "friendlyName": "Download Chromium Build",
   "description": "Deploys Chromium to the Build Agent",
-  "helpMarkDown": "v$(GITVERSION_FullSemVer) [More Information](https://github.com/Schlumberger/vsts-chromium-task#readme)",
+  "helpMarkDown": "v#{GitVersion.Major}#.#{GitVersion.Minor}#.#{GitVersion.Patch}# [More Information](https://github.com/Schlumberger/vsts-chromium-task#readme)",
   "category": "Deploy",
   "visibility": [
     "Build",
